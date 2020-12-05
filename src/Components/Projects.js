@@ -44,19 +44,22 @@ const MediaContainer = styled.div`
 const cardStyle = {
 	flex: '0 0 auto',
 	margin: '10px',
-	background: '#f4f1de'
+	background: '#f4f1de',
+	borderRadius: '50px',
+	padding: '8px',
+	textAlign: 'center'
 }
 const MediaCard = () => {
 	return (
 		<>
 			{devProjects.map(proj => {
 				return <Card style={cardStyle}>
-					<CardActionArea>
+					{/* <CardActionArea>
 					<CardMedia
 						image={proj.img}
 						title={proj.title}
-					/>
-					<CardContent>
+					/> */}
+					<CardContent >
 						<Typography gutterBottom variant="h5" component="h2">
 							{proj.title}
 						</Typography>
@@ -64,8 +67,8 @@ const MediaCard = () => {
 							{proj.description}
 						</Typography>
 					</CardContent>
-					</CardActionArea>
-					<CardActions>
+					{/* </CardActionArea> */}
+					<CardActions style={{justifyContent: 'space-around', padding: '0'}}>
 							<StyledA target="_blank" rel="noreferrer" href={proj.link}>
 								<YouTubeIcon />
 							</StyledA>
