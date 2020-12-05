@@ -1,0 +1,24 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: 'Comfortaa', cursive;
+}
+
+button, h1, a {
+	font-family: 'Major Mono Display', monospace;
+}
+
+.name-logo{
+	color: #f4f1de;
+}
+
+@media (max-width: 460px){
+		.name-logo {
+			font-size: unset;
+		}
+}
+
+
