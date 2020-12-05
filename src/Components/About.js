@@ -5,7 +5,7 @@ import styled from 'styled-components'
 const About = () => {
 	return (
 		<StyledDiv>
-			<StyledH1>What I'm About</StyledH1>
+			<StyledH1>About me</StyledH1>
 			<StyledP>I’m a creative, problem solving Software Engineer with a solid background in full stack web development. Training as a veterinarian technician, I learned how to prioritize completing tasks under pressure, meet deadlines and communicate with my team. I transitioned to coding so I can utilize my creative skills.</StyledP>
 		</StyledDiv>
 	)

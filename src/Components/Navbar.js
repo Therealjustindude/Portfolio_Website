@@ -16,7 +16,7 @@ const Navbar = () => {
 				<Menu isOpen={isOpen}>
 					<LinkWrapper>
 						<MenuLink href="/projects">Projects</MenuLink>
-						<MenuLink href="/about">Bio</MenuLink>
+						<MenuLink href="/about">About</MenuLink>
 						<MenuLink href="/contact">Contact</MenuLink>
 					</LinkWrapper>
 				</Menu>
