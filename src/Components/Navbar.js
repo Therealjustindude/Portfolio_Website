@@ -7,7 +7,7 @@ const Navbar = () => {
 	return (
 		<Nav>
 			<Container>
-				<h1 className="name-logo">Justin_j_Davies</h1>
+				<MenuLink href="/"><h1 className="name-logo">Justin_j_Davies</h1></MenuLink>
 				<Hamburger onClick={()=>setIsOpen(!isOpen)}>
 					<span></span>
 					<span></span>
@@ -15,7 +15,7 @@ const Navbar = () => {
 				</Hamburger>
 				<Menu isOpen={isOpen}>
 					<LinkWrapper>
-						<MenuLink href="/">Projects</MenuLink>
+						<MenuLink href="/projects">Projects</MenuLink>
 						<MenuLink href="/about">Bio</MenuLink>
 						<MenuLink href="/contact">Contact</MenuLink>
 					</LinkWrapper>
@@ -37,7 +37,6 @@ const Container = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	max-width: 1000px;
 	margin: auto;
 	padding: 2rem;
 

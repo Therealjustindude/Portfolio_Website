@@ -31,7 +31,7 @@ const Container = styled.div`
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	max-width: 1000px;
+	max-width: 100vw;
 	margin: auto;
 	padding: 2rem;
 

@@ -3,10 +3,10 @@ import devProjects from '../devProjects'
 import styled from 'styled-components'
 import { hover } from '../colors'
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
+// import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+// import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -28,7 +28,7 @@ const Container = styled.div`
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	max-width: 1000px;
+	max-width: 100vw;
 	margin: auto;
 	padding: 2rem;
 `
