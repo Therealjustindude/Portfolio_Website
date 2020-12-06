@@ -15,7 +15,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 const Projects = () => {
 	return (
 		<Container>
-			<h1 style={{ marginBottom: '15px' }}>Projects</h1>
+			<StyledH1>Projects</StyledH1>
 			<MediaContainer>
 				<MediaCard/>
 			</MediaContainer>
@@ -24,20 +24,24 @@ const Projects = () => {
 }
 const Container = styled.div`
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	max-width: 100vw;
-	margin: auto;
-	padding: 2rem;
 `
 const MediaContainer = styled.div`
 	display: flex;
 	overflow: scroll;
-	padding: 2rem;
 	align-items: center;
+	flex-direction: row;
 	justify-content: space-between;
+	max-width: 100vw;
+
+`
+
+const StyledH1 = styled.h1`
+	padding: 10px;
+	text-align: center;
 `
 
 //create syle for cards 

@@ -4,7 +4,7 @@ import Navbar from '../Components/Navbar'
 
 function App() {
   return (
-    <div style={mainStyle}>
+    <div className="app-wrapper" style={mainStyle}>
       <Navbar />
       <Home />
     </div>
@@ -12,8 +12,8 @@ function App() {
 }
 
 const mainStyle = {
-  width: '100vw',
-  height: '100vh',
+  width: '100%',
+  height: '100%',
   background: '#2f3e46'
 }
 

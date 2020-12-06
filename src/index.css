@@ -21,4 +21,10 @@ button, h1, a {
 		}
 }
 
+@media(max-width: 800px){
+	.app-wrapper {
+		
+	}
+}
+
 
