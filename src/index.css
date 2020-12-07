@@ -9,10 +9,15 @@ body {
 
 button, h1, a {
 	font-family: 'Major Mono Display', monospace;
+	color: black;
+}
+
+p, label{
+	color: black;
 }
 
 .name-logo{
-	color: #f4f1de;
+	color: black;
 }
 
 @media (max-width: 460px){

@@ -1,10 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import {  hover } from '../colors'
+import {  bright, hover } from '../colors'
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 
 const Contact = () => {
@@ -12,7 +11,6 @@ const Contact = () => {
 		<Container>
 			<StyledH1>Contact</StyledH1>
 			<label style={{marginBottom: '6px'}}>Email</label>
-			<MailOutlineIcon />
 			<StyledP>TheRealJustinDude@gmail.com</StyledP>
 			<StyledH1>Social</StyledH1>
 			<StyledDiv>
@@ -51,8 +49,16 @@ const StyledP = styled.p`
 `
 
 const StyledA = styled.a`
-	color: #${hover};	
+	color: black;	
 	margin: 5px;
+	transition: all 0.1s ease-in;
+	border-radius: 4px;
+
+	&:hover {
+		padding: 2px;
+		color: #${hover};
+		border: outset #${bright};
+	}
 `
 const StyledDiv = styled.div`
 	display: flex;

@@ -1,8 +1,9 @@
 import React from 'react'
 import devProjects from '../devProjects'
 import styled from 'styled-components'
-import { hover } from '../colors'
-import Card from '@material-ui/core/Card';
+import { bright, hover } from '../colors'
+// import Card from '@material-ui/core/Card';
+import { Paper } from '@material-ui/core';
 // import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -48,8 +49,6 @@ const StyledH1 = styled.h1`
 const cardStyle = {
 	flex: '0 0 auto',
 	margin: '10px',
-	background: '#f4f1de',
-	borderRadius: '50px',
 	padding: '8px',
 	textAlign: 'center'
 }
@@ -57,7 +56,7 @@ const MediaCard = () => {
 	return (
 		<>
 			{devProjects.map(proj => {
-				return <Card style={cardStyle}>
+				return <Paper elevation={ 0} style={cardStyle}>
 					{/* <CardActionArea>
 					<CardMedia
 						image={proj.img}
@@ -73,22 +72,32 @@ const MediaCard = () => {
 					</CardContent>
 					{/* </CardActionArea> */}
 					<CardActions style={{justifyContent: 'space-around', padding: '0'}}>
-							<StyledA target="_blank" rel="noreferrer" href={proj.link}>
+						<StyledA target="_blank" rel="noreferrer" href={proj.link}>
 								<YouTubeIcon />
 							</StyledA>
 							<StyledA target="_blank" rel="noreferrer" href="https://github.com/Therealjustindude">
 								<GitHubIcon />
 							</StyledA>
 					</CardActions>
-				</Card>
+				</Paper>
 			})}
 		</>
 	);
 
   }
 
+
+  
 const StyledA = styled.a`
-	color: #${hover};	
+	color: black;	
 	margin: 5px;
+	transition: all 0.1s ease-in;
+	border-radius: 4px;
+
+	&:hover {
+		padding: 2px;
+		color: #${hover};
+		border: outset #${bright};
+	}
 `
 export default Projects

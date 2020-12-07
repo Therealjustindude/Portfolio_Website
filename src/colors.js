@@ -1,3 +1,3 @@
-export const hover = 'caf0f8'
+export const hover = '272640'
 
-export const bright = 'ffff3f'
+export const bright = 'e8f8c1'

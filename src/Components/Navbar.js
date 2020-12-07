@@ -7,7 +7,7 @@ const Navbar = () => {
 	return (
 		<Nav>
 			<Container>
-				<MenuLink href="/"><h1 className="name-logo">Justin_j_Davies</h1></MenuLink>
+				<MenuLink href="/"><StyledH1 className="name-logo">Justin_j_Davies</StyledH1></MenuLink>
 				<Hamburger onClick={()=>setIsOpen(!isOpen)}>
 					<span></span>
 					<span></span>
@@ -16,7 +16,6 @@ const Navbar = () => {
 				<Menu isOpen={isOpen}>
 					<LinkWrapper>
 						<MenuLink href="/projects">Projects</MenuLink>
-						<MenuLink href="/about">About</MenuLink>
 						<MenuLink href="/contact">Contact</MenuLink>
 					</LinkWrapper>
 				</Menu>
@@ -31,6 +30,13 @@ const Nav = styled.div`
 	left: 0;
 	right: 0;
 	z-index: 3;
+`
+const StyledH1 = styled.h1`
+	padding: 5px;
+	text-align: center;
+	&:hover {
+		color: #${bright};
+	}
 `
 const Container = styled.div`
 	display: flex;
@@ -74,16 +80,16 @@ const LinkWrapper = styled.div`
 `
 const MenuLink = styled.a`
 	text-decoration: none;
-	color: #f4f1de;
-	font-size: 0.6rem;
+	color: black;
+	font-size: 15px;
 	padding: 0.5rem 1.0rem;
-	transition: all 0.2s ease-in;
-	border-radius: 0.5rem;
+	transition: all 0.3s ease-in;
+	border-radius: 0.4rem;
 	margin: 2px;
 	
 	&:hover {
 		color: #${bright};
-		background: #${hover};
+		text-shadow: 1px 3px #${hover};
 	}
 `
 const Hamburger = styled.div`
@@ -94,7 +100,7 @@ const Hamburger = styled.div`
 	span {
 		height: 2px;
 		width: 25px;
-		background: #f4f1de;
+		background: black;
 		margin-bottom: 4px;
 		border-radius: 5px;
 	}

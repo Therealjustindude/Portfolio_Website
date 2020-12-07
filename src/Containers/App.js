@@ -14,7 +14,7 @@ function App() {
 const mainStyle = {
   width: '100%',
   height: '100%',
-  background: '#2f3e46'
+  background: 'white'
 }
 
 export default App;
