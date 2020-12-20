@@ -16,7 +16,7 @@ const Contact = () => {
 			<StyledDiv>
 				<StyledA target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/justin-j-davies"><LinkedInIcon/></StyledA>
 				<StyledA target="_blank" rel="noreferrer" href="https://github.com/Therealjustindude"><GitHubIcon/></StyledA>
-				<StyledA target="_blank"  rel="noreferrer" href="https://twitter.com/JustinJamesDev"><TwitterIcon/></StyledA>
+				<StyledA target="_blank"  rel="noreferrer" href="https://twitter.com/justindev_ies"><TwitterIcon/></StyledA>
 				<StyledA target="_blank"  rel="noreferrer" href="https://www.youtube.com/channel/UCvobIaHO54NnF86iZCqOx7g?view_as=subscriber"><YouTubeIcon/></StyledA>
 			</StyledDiv>
 		</Container>
