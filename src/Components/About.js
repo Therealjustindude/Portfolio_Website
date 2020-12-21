@@ -9,7 +9,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 const About = () => {
 	return (
 		<StyledDiv>
-			<StyledH1>About me</StyledH1>
+			<StyledH1>Software Engineer</StyledH1>
 			<StyledP>I like to self-reflect, debug, and refactor often. I hit a flow state when I am coding, making music, and hanging out with my wife. Recently, I completed an online software engineering Bootcamp at FlatIron School. It was exciting to build an MVC structured application using Ruby on Rails, learning DOM manipulation while building an application using vanilla Javascript, and state management while creating a React application that uses Redux. My goal is to thrive in my career by continuing to develop my skills so I can overcome new challenges. If you’d like to work together, send me a message.</StyledP>
 			<StyledAContainer>
 				<StyledA target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/justin-j-davies"><LinkedInIcon/></StyledA>
