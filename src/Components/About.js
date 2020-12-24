@@ -27,9 +27,16 @@ const StyledDiv = styled.div`
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	max-width: 100vw;
+	width: 100%;
+	height: 50%;
 	margin: auto;
 	padding: 2rem;
+	background: white;
+	border-radius: 10px 100px 10px 100px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.1);
+	box-shadow: 0 6px rgba(0,0,0,0.5);
 `
 const StyledA = styled.a`
 	color: black;	
@@ -47,7 +54,7 @@ const StyledAContainer = styled.div`
 	display: flex;
 	width: 100%;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 `
 
 const StyledH1 = styled.h1`

@@ -30,6 +30,7 @@ const Nav = styled.div`
 	left: 0;
 	right: 0;
 	z-index: 3;
+	margin: auto;
 `
 const StyledH1 = styled.h1`
 	padding: 5px;
@@ -44,7 +45,12 @@ const Container = styled.div`
 	align-items: center;
 	flex-wrap: wrap;
 	margin: auto;
-	padding: 2rem;
+	background: white;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	box-shadow: 0 2px rgba(0,0,0,0.1);
+	border-color: rgba(0,0,0,0.3);
 
 	h1 {
 		cursor: pointer;
@@ -59,8 +65,6 @@ const Menu = styled.div`
 	@media (max-width: 768px) {
 		flex-direction: column;
 		overflow: hidden;
-		border-radius: 1rem;
-		margin-top: 1rem;
 		box-shadow: -4px 8px 15px 1 rgba(0,0,0,0.07);
 		max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
 		width: 100%;
@@ -96,6 +100,8 @@ const Hamburger = styled.div`
 	display: none;
 	flex-direction: column;
 	cursor: pointer;
+	position: absolute;
+	right: 20px;
 
 	span {
 		height: 2px;

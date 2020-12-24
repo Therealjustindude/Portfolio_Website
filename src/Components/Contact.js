@@ -10,7 +10,8 @@ const Contact = () => {
 	return (
 		<Container>
 			<StyledH1>Contact</StyledH1>
-			<label style={{marginBottom: '6px'}}>Email</label>
+			<label style={{marginBottom: '6px', 
+	color: 'rgba(0,0,0,0.7)'}}>Email</label>
 			<StyledP>TheRealJustinDude@gmail.com</StyledP>
 			<StyledH1>Social</StyledH1>
 			<StyledDiv>
@@ -29,9 +30,16 @@ const Container = styled.div`
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	max-width: 100vw;
+	width: 100%;
+	height: 50%;
 	margin: auto;
 	padding: 2rem;
+	background: white;
+	border-radius: 0px 100px 100px 0px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.1);
+	box-shadow: 0 6px rgba(0,0,0,0.5);
 
 	label{
 		margin: 5px;
@@ -45,11 +53,12 @@ const StyledH1 = styled.h1`
 
 const StyledP = styled.p`
 	text-align: center;
+	color: rgba(0,0,0,0.7);	
 	margin: 10px;
 `
 
 const StyledA = styled.a`
-	color: black;	
+	color: rgba(0,0,0,0.5);	
 	margin: 5px;
 	transition: all 0.1s ease-in;
 	border-radius: 4px;
@@ -64,7 +73,7 @@ const StyledDiv = styled.div`
 	display: flex;
 	width: 100%;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 `
 
 

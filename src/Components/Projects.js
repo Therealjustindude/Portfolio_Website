@@ -27,22 +27,34 @@ const Container = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
 	flex-direction: column;
+	background: white;
+	width: 100%;
+	height: 50%;
+	margin: auto;
+	overflow:hidden;
+	padding: 2rem;
+	border-radius: 100px 10px 100px 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.1);
+	box-shadow: 0px 6px rgba(0,0,0,0.5);
 `
 const MediaContainer = styled.div`
 	display: flex;
 	overflow: scroll;
 	align-items: center;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	max-width: 100vw;
 
 `
 
 const StyledH1 = styled.h1`
-	padding: 10px;
+	padding: 5px;
 	text-align: center;
+	margin: 2px;
+	border-bottom: 1px dotted rgba(0,0,0,0.1);
 `
 
 //create syle for cards 
@@ -50,7 +62,12 @@ const cardStyle = {
 	flex: '0 0 auto',
 	margin: '10px',
 	padding: '8px',
-	textAlign: 'center'
+	textAlign: 'center',
+	background: 'white',
+	borderStyle: 'outset',
+	borderWidth: '1px',
+	borderColor: 'rgba(0,0,0,0.1)',
+	boxShadow: '2px 6px rgba(0,0,0,0.5)'
 }
 const MediaCard = () => {
 	return (
