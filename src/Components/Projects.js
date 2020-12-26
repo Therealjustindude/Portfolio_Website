@@ -44,7 +44,7 @@ const Container = styled.div`
 `
 const MediaContainer = styled.div`
 	display: flex;
-	overflow: hidden;
+	overflow: scroll;
 	align-items: center;
 	flex-direction: column;
 	justify-content: space-between;

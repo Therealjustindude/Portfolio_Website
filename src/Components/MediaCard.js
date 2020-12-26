@@ -52,8 +52,8 @@ const Container = styled.div`
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+	padding: 2px;
 	flex-direction: column;
-	background-color: grey;
 `
 
 const BtnDiv = styled.div`
