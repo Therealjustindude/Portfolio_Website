@@ -24,8 +24,7 @@ const About = () => {
 const StyledDiv = styled.div`
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
+	align-items: center;	
 	flex-direction: column;
 	width: 80%;
 	height: 50%;
@@ -49,6 +48,11 @@ const StyledA = styled.a`
 		color: #${hover};
 		border: outset #${bright};
 	}
+
+	@media(max-width: 810px){
+		font-size: medium;
+		margin: 2px;
+	}
 `
 const StyledAContainer = styled.div`
 	display: flex;
@@ -59,12 +63,20 @@ const StyledAContainer = styled.div`
 
 const StyledH1 = styled.h1`
 	margin: 5px;
+
+	@media(max-width: 810px){
+		font-size: medium;
+	}
 `
 
 const StyledP = styled.p`
 	text-align: center;
 	margin: 10px;
 	padding: 5px;
+
+	@media(max-width: 810px){
+		font-size: x-small;
+	}
 `
 
 export default About

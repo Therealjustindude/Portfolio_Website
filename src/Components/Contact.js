@@ -49,12 +49,20 @@ const Container = styled.div`
 const StyledH1 = styled.h1`
 	margin-bottom: 22px;
 	margin-top: 15px;
+
+	@media(max-width: 810px){
+		font-size: large;
+	}
 `
 
 const StyledP = styled.p`
 	text-align: center;
 	color: rgba(0,0,0,0.7);	
 	margin: 10px;
+
+	@media(max-width: 810px){
+		font-size: medium;
+	}
 `
 
 const StyledA = styled.a`
