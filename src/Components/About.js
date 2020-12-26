@@ -27,7 +27,7 @@ const StyledDiv = styled.div`
 	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: column;
-	width: 100%;
+	width: 80%;
 	height: 50%;
 	margin: auto;
 	padding: 2rem;
@@ -36,7 +36,7 @@ const StyledDiv = styled.div`
 	border-style: solid;
 	border-width: 1px;
 	border-color: rgba(0,0,0,0.1);
-	box-shadow: 0 6px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.6);
 `
 const StyledA = styled.a`
 	color: black;	

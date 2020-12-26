@@ -49,7 +49,7 @@ const Container = styled.div`
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 5px;
-	box-shadow: 0 2px rgba(0,0,0,0.1);
+	box-shadow: 0 0px 20px 10px rgba(0,0,0,0.6);
 	border-color: rgba(0,0,0,0.3);
 
 	h1 {
