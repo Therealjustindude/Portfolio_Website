@@ -12,14 +12,12 @@ export const MediaCard = () => {
 	const [index, setIndex] = useState(0)
 
 	const next = () => {
-		debugger
-		if (index >= 0 || index <= 5) {
+		if (index < 4) {
 			setIndex(index + 1)
 		}
 	}
 	const prev = () => {
-		debugger
-		if (index > 0 || index <= 5) {
+		if (index !== 0) {
 			setIndex(index - 1)
 		}
 	}
@@ -69,11 +67,14 @@ const Button = styled.button`
 	background-color: white;
 	border: none;
 	color: black;
-	padding: 15px 32px;
+	padding: 10px;
 	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
+	
+	&:hover {
+        padding: 2px;
+        color: #${hover};
+        border: outset #${bright};
+	}
 	
 	@media(max-width: 810px){
 		font-size: small;
