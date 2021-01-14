@@ -1,7 +1,7 @@
 
 
 const devProjects = [
-	{ title: 'weBudget', description: 'React Frontend/Rails API', link: "https://www.youtube.com/watch?v=hK-NkpIabH4&t=168s", video: './images/weBudgetvid.mp4', github: "https://github.com/Therealjustindude/webudget-frontend" },
+	{ title: 'weBudget', description: 'React Frontend/Rails API', link: "https://youtu.be/9JRZqNKuVQU", video: './images/weBudgetvid.mp4', github: "https://github.com/Therealjustindude/webudget-frontend" },
 	
 
 	{ title: 'Thank You For Tia', description: 'Vanilla Javascript Front End/Rails API', video:'./images/TYFT.mp4', link: "https://www.youtube.com/watch?v=4CKGQ91IuLo&t=2s", github: "https://github.com/Therealjustindude/ThankYouForTia" },
