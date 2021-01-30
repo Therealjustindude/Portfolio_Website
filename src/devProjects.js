@@ -4,7 +4,7 @@ const devProjects = [
 	{ title: 'weBudget', description: 'React Frontend/Rails API', link: "https://youtu.be/9JRZqNKuVQU", video: './images/weBudgetvid.mp4', github: "https://github.com/Therealjustindude/webudget-frontend" },
 	
 
-	{ title: 'Thank You For Tia', description: 'Vanilla Javascript Front End/Rails API', video:'./images/TYFT.mp4', link: "https://www.youtube.com/watch?v=4CKGQ91IuLo&t=2s", github: "https://github.com/Therealjustindude/ThankYouForTia" },
+	{ title: 'Thank You For Tia', description: 'Vanilla Javascript Front End/Rails API', video:'./images/TYFT.mp4', link: "https://www.youtube.com/watch?v=Qjq-hAugOSM&t=4s", github: "https://github.com/Therealjustindude/ThankYouForTia" },
 	
 
 	{ title: 'Mans Best Friend Fitness', description: 'Ruby on Rails Project', video: './images/mbff.mp4', link: "https://www.youtube.com/watch?v=yYtfX5_urqY", github: "https://github.com/Therealjustindude/MansBestFriendFitness" },
