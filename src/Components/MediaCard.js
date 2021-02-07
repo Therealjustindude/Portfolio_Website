@@ -25,9 +25,12 @@ export const MediaCard = () => {
 		<>
 			<Container>
 				<ReactPlayer
-						url={array[index].link}
+					url={array[index].link}
+					config={{youtube: {
+						playerVars: { showinfo: 1 }
+					  }}}
 						width="80%"
-						height="80%"
+						height="100%"
 				/>
 
 				<BtnDiv>
@@ -46,8 +49,8 @@ export const MediaCard = () => {
 }
 
 const Container = styled.div`
-	height: 700px;
-	width: 800px;
+	height: 800px;
+	width: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
