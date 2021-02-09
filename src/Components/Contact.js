@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {  bright, hover } from '../colors'
+import {  bright } from '../colors'
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -66,14 +66,14 @@ const StyledP = styled.p`
 `
 
 const StyledA = styled.a`
-	color: rgba(0,0,0,0.5);	
+	color: rgba(0,0,0,0.7);	
 	margin: 5px;
 	transition: all 0.1s ease-in;
 	border-radius: 4px;
 
 	&:hover {
 		padding: 2px;
-		color: #${hover};
+		color: black;
 		border: outset #${bright};
 	}
 `

@@ -38,7 +38,7 @@ const StyledDiv = styled.div`
 	box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.6);
 `
 const StyledA = styled.a`
-	color: black;	
+	color: rgba(0,0,0,0.7);		
 	margin: 5px;
 	transition: all 0.1s ease-in;
 	border-radius: 4px;

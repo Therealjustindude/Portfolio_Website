@@ -1,23 +1,45 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { hover , bright} from '../colors'
+import { useSpring, animated } from 'react-spring'
+
+import {bright} from '../colors'
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
+	const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }))
+
+	const calc = (x, y) => [-(y - window.innerHeight / 2) / 100, (x - window.innerWidth / 2) / 100, 1]
+	const trans = (x, y, s) => `perspective(1500px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 	return (
 		<Nav>
 			<Container>
-				<MenuLink href="/"><StyledH1 className="name-logo">Justin_j_Davies</StyledH1></MenuLink>
+				<MenuLink href="/">
+					<animated.div
+					class="card"
+					onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+					onMouseLeave={() => set({ xys: [0, 0, 1] })}
+					style={{ transform: props.xys.interpolate(trans) }}
+					>
+						<StyledH1 className="name-logo">Justin_j_Davies</StyledH1>
+					</animated.div>
+				</MenuLink>
 				<Hamburger onClick={()=>setIsOpen(!isOpen)}>
 					<span></span>
 					<span></span>
 					<span></span>
 				</Hamburger>
 				<Menu isOpen={isOpen}>
+				<animated.div
+						class="card"
+						onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+						onMouseLeave={() => set({ xys: [0, 0, 1] })}
+						style={{ transform: props.xys.interpolate(trans) }}
+				>
 					<LinkWrapper>
-						<MenuLink href="/projects">Projects</MenuLink>
-						<MenuLink href="/contact">Contact</MenuLink>
+							<MenuLink href="/projects">Projects</MenuLink>	
+							<MenuLink href="/contact">Contact</MenuLink>
 					</LinkWrapper>
+				</animated.div>
 				</Menu>
 			</Container>
 		</Nav>
@@ -35,9 +57,7 @@ const Nav = styled.div`
 const StyledH1 = styled.h1`
 	padding: 5px;
 	text-align: center;
-	&:hover {
-		color: #${bright};
-	}
+	
 `
 const Container = styled.div`
 	display: flex;
@@ -92,8 +112,7 @@ const MenuLink = styled.a`
 	margin: 2px;
 	
 	&:hover {
-		color: #${bright};
-		text-shadow: 1px 3px #${hover};
+		text-shadow: 0px 2px #${bright};
 	}
 `
 const Hamburger = styled.div`
