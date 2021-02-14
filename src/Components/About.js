@@ -5,11 +5,27 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import Avatar from 'avataaars'
 
 const About = () => {
 	return (
 		<StyledDiv>
 			<StyledH1>Software Engineer</StyledH1>
+			<Avatar
+				avatarStyle='Circle'
+				topType='ShortHairShortCurly'
+				accessoriesType='Blank'
+				hairColor='BrownDark'
+				facialHairType='BeardLight'
+				facialHairColor='BrownDark'
+				clotheType='Hoodie'
+				clotheColor='Red'
+				eyeType='Default'
+				eyebrowType='RaisedExcitedNatural'
+				mouthType='Smile'
+				skinColor='Light'
+			/>
+			
 			<StyledP>I like to self-reflect, debug, and refactor often. I hit a flow state when I am coding, making music, and hanging out with my wife. Recently, I completed an online software engineering Bootcamp at FlatIron School. It was exciting to build an MVC structured application using Ruby on Rails, learning DOM manipulation while building an application using vanilla Javascript, and state management while creating a React application that uses Redux. My goal is to thrive in my career by continuing to develop my skills so I can overcome new challenges. If you’d like to work together, send me a message.</StyledP>
 			<StyledAContainer>
 				<StyledA target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/justin-j-davies"><LinkedInIcon/></StyledA>
@@ -20,6 +36,8 @@ const About = () => {
 		</StyledDiv>
 	)
 }
+
+
 
 const StyledDiv = styled.div`
 	display: flex;
