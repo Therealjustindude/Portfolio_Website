@@ -5,13 +5,14 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import profilePic from '../images/Snapseed.jpeg'
+
 
 const Contact = () => {
 	return (
 		<Container>
 			<StyledH1>Contact</StyledH1>
-			<label style={{marginBottom: '6px', 
-	color: 'rgba(0,0,0,0.7)'}}>Email</label>
+			<StyledImg src={profilePic} alt="Justin In Austin"/>
 			<StyledP>TheRealJustinDude@gmail.com</StyledP>
 			<StyledH1>Social</StyledH1>
 			<StyledDiv>
@@ -23,6 +24,12 @@ const Contact = () => {
 		</Container>
 	)
 }
+
+const StyledImg = styled.img`
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+`
 
 const Container = styled.div`
 	display: flex;
